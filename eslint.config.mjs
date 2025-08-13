@@ -1,16 +1,12 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
-
-export default eslintConfig;
+module.exports = {
+  extends: ["next/core-web-vitals"],
+  overrides: [
+    {
+      files: ["**/*.mdx"],
+      processor: null, // هیچ پردازشی روی MDX انجام نده
+      parser: null, // هیچ parser ای برای MDX انتخاب نکن
+      rules: {},
+    },
+  ],
+  ignorePatterns: ["**/*.mdx"], // برای اطمینان دوباره ignore کن
+};

@@ -1,3 +1,5 @@
+"use client";
+
 import { useWavesurfer } from "@wavesurfer/react";
 import { Pause, Play } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -50,9 +52,9 @@ export const WaveSurferPlayer = (props: WavesurferProps) => {
       <div ref={containerRef} className="w-full" />
       <button type="button" onClick={togglePlay}>
         {isPlaying ? (
-          <Pause className="stroke-primary size-6" />
+          <Pause className="stroke-primary fill-primary size-6" />
         ) : (
-          <Play className="stroke-primary size-6" />
+          <Play className="stroke-primary fill-primary size-6" />
         )}
       </button>
     </div>

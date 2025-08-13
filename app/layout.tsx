@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import localFont from "next/font/local";
 import { Metadata } from "next";
+import { Providers } from "./providers";
 
 export const iranYekan = localFont({
   src: [
@@ -41,7 +42,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={cn(iranYekan.className)}>{children}</body>
+      <body className={cn(iranYekan.className)}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
