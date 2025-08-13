@@ -1,0 +1,70 @@
+import { ArrowRight } from "lucide-react";
+
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+import Link from "next/link";
+
+export default function Page() {
+  const data = [
+    {
+      id: 1,
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : ژوئیسانس (Jouissance)",
+      summary:
+        "ژوئیسانس پدیده ای است که در جریان زندگی همواره حضور داشته و به صورت الگوهایی تکرارشونده بروز میکند.",
+      author: "حمید شاهسونی",
+      url: "/concept-jouissance",
+      image: "/images/thumbnail-concept-jouissance.png",
+    },
+  ];
+
+  return (
+    <section className="py-32 container mx-auto">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        {data.map((post) => (
+          <Card
+            key={post.id}
+            className="grid grid-rows-[auto_auto_1fr_auto]  gap-3 pt-0 rounded-2xl overflow-hidden"
+          >
+            <div className="aspect-16/9 w-full">
+              <Link
+                href={post.url}
+                target="_blank"
+                className="transition-opacity duration-200 fade-in hover:opacity-70"
+              >
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="h-full w-full object-cover object-center"
+                />
+              </Link>
+            </div>
+            <CardHeader>
+              <h3 className="text-lg font-semibold hover:underline md:text-xl">
+                <Link href={post.url} target="_blank">
+                  {post.title}
+                </Link>
+              </h3>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">{post.summary}</p>
+            </CardContent>
+            <CardFooter>
+              <Link
+                href={post.url}
+                target="_blank"
+                className="flex items-center text-foreground hover:underline"
+              >
+                <ArrowRight className="ml-2 size-4" />
+                مشاهده بیشتر
+              </Link>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+    </section>
+  );
+};
