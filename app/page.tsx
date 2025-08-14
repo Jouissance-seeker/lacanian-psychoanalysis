@@ -15,14 +15,29 @@ export default function Page() {
       title: "سری مفاهیم تخصصی روانکاوی لکانی : ژوئیسانس (Jouissance)",
       summary:
         "ژوئیسانس پدیده ای است که در جریان زندگی همواره حضور داشته و به صورت الگوهایی تکرارشونده بروز میکند.",
-      author: "حمید شاهسونی",
       url: "/concept-jouissance",
       image: "/images/thumbnail-concept-jouissance.png",
+    },
+    {
+      id: 2,
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر نمادین (The Symbolic Order)",
+      summary:
+        "امر نمادین قلمرو زبان، قانون و ساختارهای اجتماعی است که جایگاه سوژه را در دنیای بیرون تعیین میکند و روابط او را سامان میبخشد.",
+      url: "/concept-the-symbolic-order",
+      image: "/images/thumbnail-concept-the-symbolic-order.png",
+    },
+    {
+      id: 3,
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر واقع (The Real)",
+      summary:
+        "امر واقع بخشی از تجربه است که نمی‌توان آن را به سطح کلمه یا تصویر فروکاست.",
+      url: "/concept-the-real-order",
+      image: "/images/thumbnail-concept-the-real-order.png",
     },
   ];
 
   return (
-    <section className="py-32 container mx-auto">
+    <section className="py-10 container mx-auto">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
         {data.map((post) => (
           <Card

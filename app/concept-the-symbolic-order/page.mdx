@@ -1,6 +1,8 @@
 import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-the-symbolic-order.png";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Lightbulb } from "lucide-react";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto px-3 pt-4 pb-10">
 
@@ -14,13 +16,36 @@ import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 
 ## سری مفاهیم تخصصی روانکاوی لکانی : امر نمادین (the symbolic order)
 
+<div className="flex flex-col gap-3">
+  <Alert>
+    <Lightbulb className="h-4 w-4" />
+    <AlertTitle>یک نکته!</AlertTitle>
+    <AlertDescription>
+      در این مقاله از مفهوم **ژوئیسانس** استفاده شده است , با این حال پیشنیاز این مقاله نیست.
+
+      برای آشنایی بیشتر با این مفهوم، می‌توانید به مقاله [ژوئیسانس](https://www.lacanian-psychoanalysis.com/concept-jouissance) مراجعه کنید.
+    </AlertDescription>
+  </Alert>
+  <Alert>
+    <Lightbulb className="h-4 w-4" />
+    <AlertTitle>یک نکته!</AlertTitle>
+    <AlertDescription>
+      در این مقاله از مفهوم **امر واقع** استفاده شده است، با این حال پیشنیاز این مقاله نیست.
+
+      برای آشنایی بیشتر با این مفهوم، می‌توانید به مقاله [امر واقع](https://www.lacanian-psychoanalysis.com/concept-the-real-order) مراجعه کنید.
+    </AlertDescription>
+  </Alert>
+</div>
+
+---
+
 > با ورود به **امر نمادین**، **سوژه** از بهشت **امر واقع** رانده شده و در سرزمین قانون ساکن میگردد. 
 >
 > — حمید شاهسونی
 
 ---
 
-### مقدمه
+### 1. مقدمه
 
 سه ساحت بنیادین در روانکاوی لکانی وجود دارد: **امر نمادین**، **امر واقع** و **امر خیالی**.  
 **امر نمادین**، قلمرو زبان، قانون و ساختارهای اجتماعی است که جایگاه **سوژه** را در دنیای بیرون تعیین میکند و روابط او را سامان میبخشد.  
@@ -28,14 +53,14 @@ import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 
 ---
 
-### وضعیت **پیشا-نمادین**
+### 2. وضعیت **پیشا-نمادین**
 
 پیش از ورود به **امر نمادین**، کودک در وضعیتی پیشا-نمادین قرار دارد.  
 در این حالت، تجربه او بی‌واسطه‌تر به **امر واقع** متصل است.  
 
 ---
 
-### ورود به **امر نمادین** و رانده‌شدن از **امر واقع**
+### 3. ورود به **امر نمادین** و رانده‌شدن از **امر واقع**
 
 ورود به **امر نمادین** از طریق **نام پدر** انجام میشود.  
 این ورود، پذیرش قانون و محدودیت را به همراه دارد و برای همیشه مانع دسترسی مستقیم به **امر واقع** میشود.  
@@ -43,7 +68,7 @@ import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 
 ---
 
-### پیامد ساختاری **گسست**
+### 4. پیامد ساختاری **گسست**
 
 این جدایی، شکافی بنیادین در **سوژه** پدید می‌آورد.  
 این **کمبود** باعث میشود **سوژه** همواره احساس کند چیزی کم است.  
@@ -51,7 +76,7 @@ import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 
 ---
 
-### تقلای **امر خیالی** برای رفع فقدان
+### 5. تقلای **امر خیالی** برای رفع فقدان
 
 پس از ورود به **امر نمادین** و تجربه **کمبود**، **سوژه** همواره میکوشد این فقدان را جبران کند.  
 از این رو به **فانتزی** پناه میبرد.  
@@ -61,7 +86,7 @@ import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 
 ---
 
-### نمونه‌هایی از تقلای **امر خیالی** برای پر کردن این شکاف
+### 6. نمونه‌هایی از تقلای **امر خیالی** برای پر کردن این شکاف
 
 - تلاش برای به دست آوردن موقعیت اجتماعی بهتر
 - تلاش برای داشتن ظاهری بهتر
