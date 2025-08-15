@@ -1,4 +1,7 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 import {
   Card,
@@ -7,6 +10,8 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import Link from "next/link";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
   const data = [
@@ -20,7 +25,8 @@ export default function Page() {
     },
     {
       id: 2,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر نمادین (the symbolic order)",
+      title:
+        "سری مفاهیم تخصصی روانکاوی لکانی : امر نمادین (the symbolic order)",
       summary:
         "امر نمادین قلمرو زبان، قانون و ساختارهای اجتماعی است که جایگاه سوژه را در دنیای بیرون تعیین میکند و روابط او را سامان میبخشد.",
       url: "/concept-the-symbolic-order",
@@ -45,17 +51,47 @@ export default function Page() {
     {
       id: 5,
       title: "سری مفاهیم تخصصی روانکاوی لکانی : مرحله آینه ای (mirror stage)",
-      summary:
-        "مرحله آینه ای نقطه آغازین شکل گیری هویت سوژه است.",
+      summary: "مرحله آینه ای نقطه آغازین شکل گیری هویت سوژه است.",
       url: "/concept-mirror-stage",
       image: "/images/thumbnail-concept-mirror-stage.png",
     },
   ];
+  const filterOptions = [
+    { key: "all", label: "همه" },
+    { key: "concept", label: "مفاهیم" },
+    { key: "post", label: "نوشته ها" },
+  ];
+  const [filteredData, setFilteredData] = useState(data);
+  const [activeFilter, setActiveFilter] = useState<"all" | "concept" | "post">(
+    "all"
+  );
+  const handleFilter = (type: "all" | "concept" | "post") => {
+    setActiveFilter(type);
+    if (type === "all") {
+      setFilteredData(data);
+    } else {
+      setFilteredData(data.filter((item) => item.url.includes(type)));
+    }
+  };
 
   return (
-    <section className="py-10 container mx-auto">
+    <section className="py-7 container flex items-center flex-col gap-6 mx-auto">
+      <div className="hidden justify-center gap-3 p-3 rounded-lg bg-muted w-fit">
+        {filterOptions.map((option) => (
+          <Button
+            key={option.key}
+            onClick={() =>
+              handleFilter(option.key as "all" | "concept" | "post")
+            }
+            variant={activeFilter === option.key ? "default" : "ghost"}
+            className="transition-colors"
+          >
+            {option.label}
+          </Button>
+        ))}
+      </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8">
-        {data.map((post) => (
+        {filteredData.map((post) => (
           <Card
             key={post.id}
             className="grid grid-rows-[auto_auto_1fr_auto]  gap-1 pt-0 rounded-2xl overflow-hidden"
@@ -81,7 +117,9 @@ export default function Page() {
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-[15px]">{post.summary}</p>
+              <p className="text-muted-foreground text-[15px]">
+                {post.summary}
+              </p>
             </CardContent>
             <CardFooter>
               <Link
@@ -98,4 +136,4 @@ export default function Page() {
       </div>
     </section>
   );
-};
+}
