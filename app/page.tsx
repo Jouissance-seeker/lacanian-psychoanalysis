@@ -42,6 +42,14 @@ export default function Page() {
       url: "/concept-the-imaginary-order",
       image: "/images/thumbnail-concept-the-imaginary-order.png",
     },
+    {
+      id: 5,
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : مرحله آینه ای (mirror stage)",
+      summary:
+        "مرحله آینه ای نقطه آغازین شکل گیری هویت سوژه است.",
+      url: "/concept-mirror-stage",
+      image: "/images/thumbnail-concept-mirror-stage.png",
+    },
   ];
 
   return (
