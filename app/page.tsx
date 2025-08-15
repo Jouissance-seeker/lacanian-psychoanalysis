@@ -34,15 +34,23 @@ export default function Page() {
       url: "/concept-the-real-order",
       image: "/images/thumbnail-concept-the-real-order.png",
     },
+    {
+      id: 4,
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر خیالی (The Imaginary)",
+      summary:
+        "ایگو در این ساحت شکل میگیرد و بر پایه یک کژبازشناسی بنیادی استوار است.",
+      url: "/concept-the-imaginary-order",
+      image: "/images/thumbnail-concept-the-imaginary-order.png",
+    },
   ];
 
   return (
     <section className="py-10 container mx-auto">
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8">
         {data.map((post) => (
           <Card
             key={post.id}
-            className="grid grid-rows-[auto_auto_1fr_auto]  gap-3 pt-0 rounded-2xl overflow-hidden"
+            className="grid grid-rows-[auto_auto_1fr_auto]  gap-1 pt-0 rounded-2xl overflow-hidden"
           >
             <div className="aspect-16/9 w-full">
               <Link
@@ -58,14 +66,14 @@ export default function Page() {
               </Link>
             </div>
             <CardHeader>
-              <h3 className="text-lg font-semibold hover:underline md:text-xl">
+              <h3 className="text-lg font-semibold hover:underline">
                 <Link href={post.url} target="_blank">
                   {post.title}
                 </Link>
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">{post.summary}</p>
+              <p className="text-muted-foreground text-[15px]">{post.summary}</p>
             </CardContent>
             <CardFooter>
               <Link

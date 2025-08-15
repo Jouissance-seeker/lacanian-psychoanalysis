@@ -61,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={cn(iranYekan.className)}>
+      <body className={cn(iranYekan.className, "px-5")}>
         <Providers>{children}</Providers>
       </body>
     </html>
