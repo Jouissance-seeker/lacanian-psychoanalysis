@@ -12,7 +12,7 @@ export default function Page() {
   const data = [
     {
       id: 1,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : ژوئیسانس (Jouissance)",
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : ژوئیسانس (jouissance)",
       summary:
         "ژوئیسانس پدیده ای است که در جریان زندگی همواره حضور داشته و به صورت الگوهایی تکرارشونده بروز میکند.",
       url: "/concept-jouissance",
@@ -20,7 +20,7 @@ export default function Page() {
     },
     {
       id: 2,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر نمادین (The Symbolic Order)",
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر نمادین (the symbolic order)",
       summary:
         "امر نمادین قلمرو زبان، قانون و ساختارهای اجتماعی است که جایگاه سوژه را در دنیای بیرون تعیین میکند و روابط او را سامان میبخشد.",
       url: "/concept-the-symbolic-order",
@@ -28,7 +28,7 @@ export default function Page() {
     },
     {
       id: 3,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر واقع (The Real)",
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر واقع (the real)",
       summary:
         "امر واقع بخشی از تجربه است که نمی‌توان آن را به سطح کلمه یا تصویر فروکاست.",
       url: "/concept-the-real-order",
@@ -36,7 +36,7 @@ export default function Page() {
     },
     {
       id: 4,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر خیالی (The Imaginary)",
+      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر خیالی (the imaginary)",
       summary:
         "ایگو در این ساحت شکل میگیرد و بر پایه یک کژبازشناسی بنیادی استوار است.",
       url: "/concept-the-imaginary-order",
