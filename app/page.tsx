@@ -75,7 +75,7 @@ export default function Page() {
   };
 
   return (
-    <section className="py-7 container flex items-center flex-col gap-6 mx-auto">
+    <section className="py-7 container flex items-center max-w-screen-lg flex-col gap-6 mx-auto">
       <div className="hidden justify-center gap-3 p-3 rounded-lg bg-muted w-fit">
         {filterOptions.map((option) => (
           <Button
@@ -90,7 +90,7 @@ export default function Page() {
           </Button>
         ))}
       </div>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-8">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
         {filteredData.map((post) => (
           <Card
             key={post.id}
