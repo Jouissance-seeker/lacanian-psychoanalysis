@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
   Home,
@@ -22,13 +22,14 @@ export const Header = () => {
   return (
     <div className="flex justify-between items-center container mx-auto max-w-screen-lg">
       <div className="flex gap-2 items-center">
-        <Avatar className="size-13 border border-gray-800">
+        <Avatar className="size-13 border">
           <AvatarImage src="/images/logo.jpg" />
+          <AvatarFallback>HS</AvatarFallback>
         </Avatar>
-        <div className="flex flex-col">
+        <div className="flex-col hidden sm:flex">
           <p className="font-bold">حمید شاهسونی</p>
           <p className="text-sm text-muted-foreground">
-            پژوهشگر روانکاوی لکانی
+            پژوهشگر روانکاوی لکانی و یونگی
           </p>
         </div>
       </div>
