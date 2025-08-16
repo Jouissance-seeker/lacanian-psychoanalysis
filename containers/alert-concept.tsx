@@ -14,9 +14,9 @@ export const AlertConcept = ({ keys }: AlertConceptProps) => {
 
   return (
     <Alert>
-      <Lightbulb className="h-4 w-4" />
-      <AlertTitle>یک نکته!</AlertTitle>
-      <AlertDescription>
+      <Lightbulb className="!size-5.5" />
+      <AlertTitle className="font-bold mb-3">یک نکته!</AlertTitle>
+      <AlertDescription className="text-primary">
         برخی از مفاهیم مطرح‌شده در این مقاله پیش‌تر در قالب مقالات جداگانه توضیح
         داده شده‌اند، با این حال مطالعه آن‌ها پیش‌نیاز این مطلب نیست.
         <br />
@@ -25,7 +25,7 @@ export const AlertConcept = ({ keys }: AlertConceptProps) => {
           {items.map((item) => (
             <li key={item.key}>
               <Link href={item.href}>{item.key}</Link>
-              <p className="text-[15px] text-gray-500">
+              <p className="text-[15px] text-primary">
                 {item.summary}
               </p>
             </li>

@@ -23,7 +23,7 @@ export const Header = () => {
     <div className="flex justify-between items-center container mx-auto max-w-screen-lg">
       <div className="flex gap-2 items-center">
         <Avatar className="size-13 border">
-          <AvatarImage src="/images/logo.jpg" />
+          <AvatarImage src="/images/logo.jpg" className="dark:invert" />
           <AvatarFallback>HS</AvatarFallback>
         </Avatar>
         <div className="flex-col hidden sm:flex">
