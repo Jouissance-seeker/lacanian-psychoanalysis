@@ -4,7 +4,7 @@ export const conceptsData = [
     key: "ژوئیسانس (jouissance)",
     title: "مفاهیم روانکاوی لکانی : ژوئیسانس (jouissance)",
     summary:
-      "ژوئیسانس پدیده ای است که در جریان زندگی همواره حضور داشته و به صورت الگوهایی تکرارشونده بروز میکند.",
+      "**ژوئیسانس** لذتی است که از مرز لذت معمولی فراتر میرود و تجربه ای دوگانه میسازد, جایی که میل و کشش با لذت همراه است اما همزمان رگه هایی از رنج و فشار درونی نیز خود را نشان میدهد.",
     href: "/concept-jouissance",
     image: "/images/thumbnail-concept-jouissance.png",
   },
@@ -13,7 +13,7 @@ export const conceptsData = [
     key: "امر نمادین (the symbolic order)",
     title: "مفاهیم روانکاوی لکانی : امر نمادین (the symbolic order)",
     summary:
-      "امر نمادین قلمرو زبان، قانون و ساختارهای اجتماعی است که جایگاه سوژه را در دنیای بیرون تعیین میکند و روابط او را سامان میبخشد.",
+      "**امر نمادین** قلمرویی است که زبان و قانون و ساختارهای اجتماعی در آن جای میگیرند و به واسطه آن جایگاه و روابط ما در جامعه شکل میگیرد.",
     href: "/concept-the-symbolic-order",
     image: "/images/thumbnail-concept-the-symbolic-order.png",
   },
@@ -22,7 +22,7 @@ export const conceptsData = [
     key: "امر واقع (the real order)",
     title: "مفاهیم روانکاوی لکانی : امر واقع (the real order)",
     summary:
-      "امر واقع بخشی از تجربه است که نمی‌توان آن را به سطح کلمه یا تصویر فروکاست.",
+      "**امر واقع** بخشی از تجربه است که هیچگاه در قالب واژه یا تصویر نمیگنجد و همواره به صورت چیزی مزاحم و سرسخت بازمیگردد و معمولا با تجربه رنج پیوند میخورد.",
     href: "/concept-the-real-order",
     image: "/images/thumbnail-concept-the-real-order.png",
   },
@@ -31,7 +31,7 @@ export const conceptsData = [
     key: "امر خیالی (the imaginary order)",
     title: "مفاهیم روانکاوی لکانی : امر خیالی (the imaginary order)",
     summary:
-      "ایگو در این ساحت شکل میگیرد و بر پایه یک کژبازشناسی بنیادی استوار است.",
+      "**امر خیالی** عرصه ای است که در آن «من» شکل میگیرد اما این «من» چیزی جز فریبی تصویری نیست که بر اساس یک بازشناسی نادرست بنا شده است.",
     href: "/concept-the-imaginary-order",
     image: "/images/thumbnail-concept-the-imaginary-order.png",
   },
@@ -39,7 +39,8 @@ export const conceptsData = [
     id: 5,
     key: "مرحله آینه ای (mirror stage)",
     title: "مفاهیم روانکاوی لکانی : مرحله آینه ای (mirror stage)",
-    summary: "مرحله آینه ای نقطه آغازین شکل گیری هویت سوژه است.",
+    summary:
+      "**مرحله آینه ای** لحظه ای است که کودک برای نخستین بار تصویر کامل بدن خود را در آینه بازمی شناسد و بر پایه همین بازشناسی بیرونی هویت و «من» اولیه شکل میگیرد.",
     href: "/concept-mirror-stage",
     image: "/images/thumbnail-concept-mirror-stage.png",
   },

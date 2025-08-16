@@ -41,7 +41,9 @@ export default function Page() {
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">{concept.summary}</p>
+              <p className="text-muted-foreground">
+                {concept.summary.replaceAll("**", "")}
+              </p>
             </CardContent>
             <CardFooter>
               <Link
