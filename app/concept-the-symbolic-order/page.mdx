@@ -2,6 +2,7 @@ import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-the-symbolic-order.png";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 import { AlertConcept } from "@/containers/alert-concept";
+import { conceptsData } from "@/data/concepts";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto">
 
@@ -24,6 +25,12 @@ import { AlertConcept } from "@/containers/alert-concept";
 > با ورود به **امر نمادین**، **سوژه** از بهشت **امر واقع** رانده شده و در سرزمین قانون ساکن میگردد.
 >
 > — حمید شاهسونی
+
+---
+
+### 0. خلاصه
+
+{conceptsData.find(concept => concept.key === "امر نمادین (the symbolic order)")?.summary}
 
 ---
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-the-imaginary-order.png";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 import { AlertConcept } from "@/containers/alert-concept";
+import { conceptsData } from "@/data/concepts";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto">
 
@@ -28,6 +29,12 @@ import { AlertConcept } from "@/containers/alert-concept";
 > در آینه نگاهِ **دیگری کوچک** است که خود را می‌بینم و همان لحظه از حقیقت خویش فاصله می‌گیرم.
 >
 > — حمید شاهسونی
+
+---
+
+### 0. خلاصه
+
+{conceptsData.find(concept => concept.key === "امر خیالی (the imaginary order)")?.summary}
 
 ---
 

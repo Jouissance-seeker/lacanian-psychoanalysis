@@ -2,6 +2,7 @@ import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-jouissance.png";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 import { AlertConcept } from "@/containers/alert-concept";
+import { conceptsData } from "@/data/concepts";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto">
 
@@ -16,8 +17,10 @@ import { AlertConcept } from "@/containers/alert-concept";
 ## مفاهیم روانکاوی لکانی : ژوئیسانس ( jouissance)
 
 <AlertConcept
-  keys={["امر نمادین (the symbolic order)", "امر خیالی (the imaginary order)",
-  "امر واقع (the real order)",
+  keys={[
+    "امر نمادین (the symbolic order)",
+    "امر خیالی (the imaginary order)",
+    "امر واقع (the real order)",
   ]}
 />
 
@@ -26,6 +29,12 @@ import { AlertConcept } from "@/containers/alert-concept";
 > **ژوئیسانس**، لذتی است که خود را به شکل زخم نشان میدهد.
 >
 > — حمید شاهسونی
+
+---
+
+### 0. خلاصه
+
+{conceptsData.find(concept => concept.key === "ژوئیسانس (jouissance)")?.summary}
 
 ---
 
