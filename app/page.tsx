@@ -42,7 +42,7 @@ export default function Page() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                {concept.summary.replaceAll("**", "")}
+                {concept.summary}
               </p>
             </CardContent>
             <CardFooter>

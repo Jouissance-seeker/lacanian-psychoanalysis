@@ -26,7 +26,7 @@ export const AlertConcept = ({ keys }: AlertConceptProps) => {
             <li key={item.key}>
               <Link href={item.href}>{item.key}</Link>
               <p className="text-[15px] text-gray-500">
-                {item.summary.replaceAll("**", "")}
+                {item.summary}
               </p>
             </li>
           ))}
