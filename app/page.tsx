@@ -99,7 +99,7 @@ export default function Page() {
             <div className="aspect-16/9 w-full">
               <Link
                 href={post.url}
-                target="_blank"
+              
                 className="transition-opacity duration-200 fade-in hover:opacity-70"
               >
                 <img
@@ -111,20 +111,20 @@ export default function Page() {
             </div>
             <CardHeader>
               <h3 className="text-lg font-semibold hover:underline">
-                <Link href={post.url} target="_blank">
+                <Link href={post.url}>
                   {post.title}
                 </Link>
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground text-[15px]">
+              <p className="text-muted-foreground">
                 {post.summary}
               </p>
             </CardContent>
             <CardFooter>
               <Link
                 href={post.url}
-                target="_blank"
+              
                 className="flex items-center text-foreground hover:underline"
               >
                 <ArrowRight className="ml-2 size-4" />

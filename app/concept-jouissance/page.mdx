@@ -1,35 +1,21 @@
 import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-jouissance.png";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Lightbulb } from "lucide-react";
+import { AlertSummery } from "@/containers/alert-summary";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto">
 
 <Image
   src={thumbnail}
   alt="thumbnail"
-  className="mt-4 w-full rounded-2xl border object-cover border border-gray-800"
+  className="mt-4 w-full rounded-2xl object-cover border border-gray-800"
 />
 
 <div className="prose dark:prose-invert max-w-full mx-auto w-full text-justify mt-6">
 
 ## سری مفاهیم تخصصی روانکاوی لکانی : ژوئیسانس ( jouissance)
 
-<Alert>
-  <Lightbulb className="h-4 w-4" />
-  <AlertTitle>یک نکته!</AlertTitle>
-  <AlertDescription>
-برخی از مفاهیم مطرح‌شده در این مقاله پیش‌تر در قالب مقالات جداگانه توضیح داده شده‌اند، با این حال مطالعه آن‌ها پیش‌نیاز این مطلب نیست.
-
-با کلیک بر روی هر عنوان می‌توانید به مقاله مربوطه دسترسی پیدا کنید.
-
-_ [امر نمادین](/concept-the-symbolic-order)  
-_ [امر واقع](/concept-the-real-order)  
-\_ [امر خیالی](/concept-the-imaginary-order)
-
-  </AlertDescription>
-</Alert>
+<AlertSummery keys={["the symbolic order", "the imaginary order"]} />
 
 ---
 

@@ -27,7 +27,7 @@ export const Header = () => {
         </Avatar>
         <div className="flex flex-col">
           <p className="font-bold">حمید شاهسونی</p>
-          <p className="text-sm font-medium text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             پژوهشگر روانکاوی لکانی
           </p>
         </div>
@@ -35,7 +35,7 @@ export const Header = () => {
       <div className="gap-4 flex items-center">
         <Button
           size="icon"
-          className="size-12"
+          className="size-11"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
           {theme === "dark" ? (
@@ -47,7 +47,7 @@ export const Header = () => {
         {pathname !== "/" && (
           <Button
             onClick={() => router.push("/")}
-            className="size-12"
+            className="size-11"
             size="icon"
           >
             <Home className="size-6" />
