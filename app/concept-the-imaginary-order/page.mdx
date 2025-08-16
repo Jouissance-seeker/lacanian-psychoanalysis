@@ -1,7 +1,7 @@
 import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-the-imaginary-order.png";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
-import { AlertSummery } from "@/containers/alert-summary";
+import { AlertConcept } from "@/containers/alert-concept";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto">
 
@@ -15,7 +15,13 @@ import { AlertSummery } from "@/containers/alert-summary";
 
 ### مفاهیم روانکاوی لکانی: امر خیالی (the imaginary order)
 
-<AlertSummery keys={["the symbolic order", "the real order"]} />
+<AlertConcept
+  keys={[
+    "امر نمادین (the symbolic order)",
+    "امر واقع (the real order)",
+    "مرحله آینه ای (mirror stage)",
+  ]}
+/>
 
 ---
 

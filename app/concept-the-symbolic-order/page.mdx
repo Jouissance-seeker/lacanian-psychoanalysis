@@ -1,7 +1,7 @@
 import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-the-symbolic-order.png";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
-import { AlertSummery } from "@/containers/alert-summary";
+import { AlertConcept } from "@/containers/alert-concept";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto">
 
@@ -15,7 +15,12 @@ import { AlertSummery } from "@/containers/alert-summary";
 
 ## مفاهیم روانکاوی لکانی : امر نمادین (the symbolic order)
 
-<AlertSummery keys={["jouissance", "the real order", "the imaginary order"]} />
+<AlertConcept
+  keys={[
+    "امر واقع (the real order)",
+    "امر خیالی (the imaginary order)",
+  ]}
+/>
 
 ---
 

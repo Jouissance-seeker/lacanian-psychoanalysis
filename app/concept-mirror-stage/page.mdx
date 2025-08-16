@@ -1,6 +1,6 @@
 import Image from "next/image";
 import thumbnail from "@/public/images/thumbnail-concept-mirror-stage.png";
-import { AlertSummery } from "@/containers/alert-summary";
+import { AlertConcept } from "@/containers/alert-concept";
 import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 
 <section className="container flex max-w-screen-lg flex-col items-center mx-auto">
@@ -15,8 +15,12 @@ import { WaveSurferPlayer } from "@/components/wavesurfer-player";
 
 ## مفاهیم روانکاوی لکانی : مرحله آینه ای (mirror stage)
 
-<AlertSummery
-  keys={["the symbolic order", "the real order", "the imaginary order"]}
+<AlertConcept
+  keys={[
+    "امر نمادین (the symbolic order)",
+    "امر واقع (the real order)",
+    "امر خیالی (the imaginary order)",
+  ]}
 />
 
 ---
