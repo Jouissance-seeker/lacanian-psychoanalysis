@@ -17,7 +17,7 @@ export default function Page() {
   const data = [
     {
       id: 1,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : ژوئیسانس (jouissance)",
+      title: "مفاهیم روانکاوی لکانی : ژوئیسانس (jouissance)",
       summary:
         "ژوئیسانس پدیده ای است که در جریان زندگی همواره حضور داشته و به صورت الگوهایی تکرارشونده بروز میکند.",
       url: "/concept-jouissance",
@@ -25,8 +25,7 @@ export default function Page() {
     },
     {
       id: 2,
-      title:
-        "سری مفاهیم تخصصی روانکاوی لکانی : امر نمادین (the symbolic order)",
+      title: "مفاهیم روانکاوی لکانی : امر نمادین (the symbolic order)",
       summary:
         "امر نمادین قلمرو زبان، قانون و ساختارهای اجتماعی است که جایگاه سوژه را در دنیای بیرون تعیین میکند و روابط او را سامان میبخشد.",
       url: "/concept-the-symbolic-order",
@@ -34,7 +33,7 @@ export default function Page() {
     },
     {
       id: 3,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر واقع (the real)",
+      title: "مفاهیم روانکاوی لکانی : امر واقع (the real)",
       summary:
         "امر واقع بخشی از تجربه است که نمی‌توان آن را به سطح کلمه یا تصویر فروکاست.",
       url: "/concept-the-real-order",
@@ -42,7 +41,7 @@ export default function Page() {
     },
     {
       id: 4,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : امر خیالی (the imaginary)",
+      title: "مفاهیم روانکاوی لکانی : امر خیالی (the imaginary)",
       summary:
         "ایگو در این ساحت شکل میگیرد و بر پایه یک کژبازشناسی بنیادی استوار است.",
       url: "/concept-the-imaginary-order",
@@ -50,7 +49,7 @@ export default function Page() {
     },
     {
       id: 5,
-      title: "سری مفاهیم تخصصی روانکاوی لکانی : مرحله آینه ای (mirror stage)",
+      title: "مفاهیم روانکاوی لکانی : مرحله آینه ای (mirror stage)",
       summary: "مرحله آینه ای نقطه آغازین شکل گیری هویت سوژه است.",
       url: "/concept-mirror-stage",
       image: "/images/thumbnail-concept-mirror-stage.png",
@@ -90,7 +89,7 @@ export default function Page() {
           </Button>
         ))}
       </div>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredData.map((post) => (
           <Card
             key={post.id}
@@ -99,7 +98,6 @@ export default function Page() {
             <div className="aspect-16/9 w-full">
               <Link
                 href={post.url}
-              
                 className="transition-opacity duration-200 fade-in hover:opacity-70"
               >
                 <img
@@ -111,20 +109,15 @@ export default function Page() {
             </div>
             <CardHeader>
               <h3 className="text-lg font-semibold hover:underline">
-                <Link href={post.url}>
-                  {post.title}
-                </Link>
+                <Link href={post.url}>{post.title}</Link>
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
-                {post.summary}
-              </p>
+              <p className="text-muted-foreground">{post.summary}</p>
             </CardContent>
             <CardFooter>
               <Link
                 href={post.url}
-              
                 className="flex items-center text-foreground hover:underline"
               >
                 <ArrowRight className="ml-2 size-4" />
