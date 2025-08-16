@@ -1,16 +1,16 @@
 "use client";
 
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { conceptsData } from "@/data/concepts";
 import { Lightbulb } from "lucide-react";
 import Link from "next/link";
-import { data } from "@/data/concepts";
 
 type AlertConceptProps = {
   keys: string[];
 };
 
 export const AlertConcept = ({ keys }: AlertConceptProps) => {
-  const items = data.filter((item) => keys.includes(item.key));
+  const items = conceptsData.filter((item) => keys.includes(item.key));
 
   return (
     <Alert>

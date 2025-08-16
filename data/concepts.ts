@@ -1,4 +1,4 @@
-export const data = [
+export const conceptsData = [
   {
     id: 1,
     key: "ژوئیسانس (jouissance)",
